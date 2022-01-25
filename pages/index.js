@@ -55,7 +55,7 @@ export default function Index({
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const content = await client.fetch(`
     *[_type == "content"][0]{
       homeSection{
